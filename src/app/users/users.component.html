@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="card" *ngFor="let user of users">
+        <div class="card_img">
+            <img [src]="user.photo" [alt]="user.name">
+        </div>
+        <div class="card_name">
+            <p>Prénon: {{user.firstName}}</p>
+            <p>Nom: {{user.name}}</p>
+        </div>
+        <div class="card_quote">
+    
+            <p id="quote">{{user.quote}}</p>
+    
+            <input type="text" [(ngModel)]="user.quote">
+    
+    
+        </div>
+        <div class="card_age">
+           
+            <button (click)="toggleText()">{{showText ? 'Cacher' : 'Afficher'}}</button>
+            <p *ngIf="showText">age : {{user.age}} ans </p>
+        </div>
+    </div>
+</div>

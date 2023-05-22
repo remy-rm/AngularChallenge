@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+  
+}
+.card{
+    margin-right: 10px;
+    width: 20%;
+    color: rgb(81, 81, 81);
+    padding: .8vh;
+    background: radial-gradient(circle, rgba(174,180,238,1) 0%, rgba(148,233,171,1) 100%);
+    border-radius:10px ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    img{
+        border-radius:10px 10px 0px 0px ;
+        width: 100%;
+    }
+
+   &_age{
+    display: flex;
+        & button {
+            
+            margin-top: .5vh;
+            margin-right: .5vh;
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            background-size: 120% auto;
+            background-image: linear-gradient(315deg, #4ecdc4 0%, #c797eb 75%);
+            &:hover {
+                background-position: right center;
+            }
+            &:active {
+                top: 2px;
+            }
+        }
+    }
+}
